@@ -21,20 +21,31 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-xl-12">
-          <div id="end" class="d-flex flex-column justify-content-center">
-          <h1 id="finalScore">0</h1>
-          <form>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="username"
-            />
-            <button type="submit" class="btn">Save</button>
-          </form>
-        </div></div>
-        
+        <div class="col-xl-12 d-flex justify-content-center align-items-center">
+          <div id="end">
+            <h1 id="finalScore" class="text-center">0</h1>
+            <form>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="username"
+              />
+              <button 
+                type="submit" 
+                class="btn" 
+                id="saveScoreBtn" 
+                onclick="saveHighScore(event)"
+                disabled
+              >
+                Save
+              </button>
+            </form>
+            <a class="btn" href="./game.html">Play Again</a>
+            <br>
+            <a class="btn" href="#">Go Home</a>
+          </div>
+        </div>
       </div>
     </div>
 
