@@ -7,6 +7,7 @@
     <meta name="keywords" content="266labs, quizzie, developer, Quiz-App, Quiz, web, tech">
 
     <!--  css  -->
+    <link rel="stylesheet" href="../css/preloader.css"  />
     <link rel="stylesheet" href="../css/bootstrap.css"  />
     <link rel="stylesheet" href="../css/bootstrap.min.css"  />
     <link rel="stylesheet" href="../css/app.css"  />
@@ -19,6 +20,34 @@
   </head>
 
   <body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	  <!-- Preloader -->
+		<div id="preloader">
+			<div id="container" class="container-preloader">
+				<div class="animation-preloader">
+					<div class="spinner"></div>
+					<div class="txt-loading">
+						<span preloader-text="Q" class="characters">Q</span>
+						
+						<span preloader-text="U" class="characters">U</span>
+						
+						<span preloader-text="I" class="characters">I</span>
+						
+						<span preloader-text="Z" class="characters">Z</span>
+						
+						<span preloader-text="Z" class="characters">Z</span>
+						
+						<span preloader-text="I" class="characters">I</span>
+						
+						<span preloader-text="E" class="characters">E</span>
+					</div>
+				</div>	
+				<div class="loader-section section-left"></div>
+				<div class="loader-section section-right"></div>
+			</div>
+		</div>
+
+
     <!--  Game Page  -->
     <div class="container">
       <div class="row">
@@ -68,6 +97,7 @@
       </div>
     </div>
 
+    <script src="../js/preloader.js"></script>
     <script src="../js/game.js"></script>
   </body>
 </html>
